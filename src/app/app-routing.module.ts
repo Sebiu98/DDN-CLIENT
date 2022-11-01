@@ -8,6 +8,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { ElementsListComponent } from './elements-list/elements-list.component';
+import { ElementDetailsComponent } from './element-details/element-details.component';
+import { AddElementComponent } from './add-element/add-element.component';
+
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -17,6 +21,9 @@ const routes: Routes = [
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
+  { path: 'elements', component: ElementsListComponent },
+  { path: 'elements/:id', component: ElementDetailsComponent },
+  { path: 'add', component: AddElementComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 

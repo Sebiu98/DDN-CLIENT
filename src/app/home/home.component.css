@@ -1,0 +1,83 @@
+body {
+    background: #999;
+  }
+  
+  .bill {
+    font-size: 1vmin;
+    width: 40em;
+    height: 40em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 1em #ffc);
+    background: 
+      /* legs */
+      radial-gradient(farthest-side at 65% 30%, #0000 70%, #000 72% 98%, #0000 99.99%) 40% 100% / 10% 20%,
+      radial-gradient(farthest-side at 35% 50%, #0000 70%, #000 72% 98%, #0000 99.99%) 60% 98% / 10% 26%,
+      /* arms */
+      radial-gradient(farthest-side, #0000 70%, #000 72% 98%, #0000 99.99%) 10% 68% / 25% 7%,
+      radial-gradient(farthest-side at 20% 40%, #0000 87%, #000 89% 98%, #0000 99.99%) 90% 58% / 20% 20%,
+      /* hands */
+      radial-gradient(circle at 24% 73%, #000 3%, #0000 3.25%),
+      radial-gradient(circle at 87.25% 42.75%, #000 4%, #0000 4.25%),
+      radial-gradient(farthest-side at 0 50%, #000 97%, #0000 99.99%) 85.5% 37.5% / 3% 8%;
+    background-repeat: no-repeat;
+  }
+  
+  .bill::after {
+    content: "";
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    transform: translate(-50%, -50%);
+    background:
+      /* eye */
+      radial-gradient(farthest-side, #000 98%, #0000 99.99%) 50% 48.5% / 4% 11%,
+      radial-gradient(50% 100% at 50% 140%, #fff 92%, #000 93% 99%, #0000 99.99%) 50% 40% / 35% 15%,
+      radial-gradient(50% 100% at 50% -40%, #fff 92%, #000 93% 99%, #0000 99.99%) 50% 57% / 35% 15%,
+      /* eyelashes */
+      linear-gradient(45deg, #0000 45%, #000 46% 54%, #0000 55%) 43% 44% / 10% 10%,
+      linear-gradient(77deg, #0000 45%, #000 46% 54%, #0000 55%) 47% 41% / 10% 10%,
+      linear-gradient(-77deg, #0000 45%, #000 46% 54%, #0000 55%) 53% 41% / 10% 10%,
+      linear-gradient(-45deg, #0000 45%, #000 46% 54%, #0000 55%) 57% 44% / 10% 10%,
+      linear-gradient(-45deg, #0000 45%, #000 46% 54%, #0000 55%) 43% 53% / 10% 10%,
+      linear-gradient(-77deg, #0000 45%, #000 46% 54%, #0000 55%) 47% 56% / 10% 10%,
+      linear-gradient(77deg, #0000 45%, #000 46% 54%, #0000 55%) 53% 56% / 10% 10%,
+      linear-gradient(45deg, #0000 45%, #000 46% 54%, #0000 55%) 57% 53% / 10% 10%,
+      /* bowtie */
+      conic-gradient(#0000 245deg, #000 0 295deg, #0000 0) 54% 90% / 30% 20%,
+      conic-gradient(#0000 65deg, #000 0 115deg, #0000 0) 46% 90% / 30% 20%,
+      /* bricks */
+      repeating-linear-gradient(#dd3 0 4%, #0000 0 33.3333%) 50% 100% / 100% 27%,
+      repeating-linear-gradient(90deg, #0000 0 38%, #dd3 0 39%) 50% 100% / 100% 9%,
+      repeating-linear-gradient(90deg, #0000 0 34%, #dd3 0 35%) 50% 91% / 100% 9%,
+      repeating-linear-gradient(90deg, #0000 0 24.5%, #dd3 0 25.5%) 50% 81% / 100% 9%,
+      /* hat correction */
+      linear-gradient(#000 0.75%, #0000 0),
+      /* base color */
+      #ff5
+      ;
+    background-repeat: no-repeat;
+  }
+  
+  .bill::before {
+    content: "";
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(4deg);
+    background: 
+      /* hat */
+      linear-gradient(#000 0 0) 48% 18.5% / 14% 2.5%,
+      linear-gradient(#000 0 0) 48% 0% / 5% 19%,
+      /* feet */
+      radial-gradient(farthest-side, #000 99.99%, #0000 0) 56% 96% / 3% 12%,
+      radial-gradient(farthest-side, #000 99.99%, #0000 0) 49% 97.5% / 3% 12%;
+    background-repeat: no-repeat;
+  }
