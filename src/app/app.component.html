@@ -18,25 +18,25 @@
 
     <ul class="navbar-nav ms-auto" *ngIf="!isLoggedIn">
       <li class="nav-item">
-        <a href="/register" class="nav-link" routerLink="register"><i class="bi bi-person-plus-fill">SignUp</i></a>
+        <a href="/register" class="nav-link" routerLink="register"><i class="bi bi-person-plus-fill"></i></a>
       </li>
       <li class="nav-item">
-        <a href="/login" class="nav-link" routerLink="login"><i class="bi bi-door-open-fill">Login</i></a>
+        <a href="/login" class="nav-link" routerLink="login"><i class="bi bi-door-open-fill"></i></a>
       </li>
     </ul>
 
     <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
       <li class="nav-item" *ngIf="showModeratorBoard">
-        <a routerLink="add" class="nav-link"><i class="bi bi-file-earmark-plus-fill"> Add Element</i></a>
+        <a routerLink="add" class="nav-link"><i class="bi bi-file-earmark-plus-fill"> </i></a>
       </li>
       <li class="nav-item" *ngIf="showAdminBoard">
-        <a routerLink="add" class="nav-link"><i class="bi bi-file-earmark-plus-fill"> Add Element</i></a>
+        <a routerLink="add" class="nav-link"><i class="bi bi-file-earmark-plus-fill"> </i></a>
       </li>
       <li class="nav-item">
-        <a href="/profile" class="nav-link" routerLink="profile"><i class="bi bi-person-fill">Profile</i></a>
+        <a href="/profile" class="nav-link" routerLink="profile"><i class="bi bi-person-fill"></i></a>
       </li>
       <li class="nav-item">
-        <a href="/home" class="nav-link" (click)="logout()"><i class="bi bi-door-closed-fill">LogOut</i></a>
+        <a href="/home" class="nav-link" (click)="logout()"><i class="bi bi-door-closed-fill"></i></a>
       </li>
     </ul>
   </nav>
